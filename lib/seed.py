@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 
-# Script goes here!
-from faker import Faker 
 import random
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-
 from models import Meal, Customer, Drink
 
+from faker import Faker 
 fake = Faker()
 
 if __name__ == '__main__':
