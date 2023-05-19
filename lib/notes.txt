@@ -1,4 +1,7 @@
-The goal of my CLI will be to create a way for servers 
-to see who needs to be served first based on 
-what time they arrived at the restaurant 
-and how hungry they are
+This will be a game
+
+Enter your name
+
+Put the customer in a table
+
+You can choose to ask them 

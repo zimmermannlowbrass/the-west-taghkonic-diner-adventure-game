@@ -1,4 +1,4 @@
-from sqlalchemy import ForeignKey, Column, DateTime, Integer, String, MetaData
+from sqlalchemy import ForeignKey, Column, Integer, String, MetaData
 from sqlalchemy.orm import relationship, backref
 from sqlalchemy.ext.declarative import declarative_base
 
@@ -9,13 +9,14 @@ metadata = MetaData(naming_convention=convention)
 
 Base = declarative_base(metadata=metadata)
 
-
 class Meal(Base):
     __tablename__ = 'meals'
 
     id = Column(Integer(), primary_key=True)
     name = Column(String())
     cost = Column(Integer())
+
+    customers = relationship('Customer', backref=backref('meals'))
 
     def __repr__(self):
         return f'This is the {self.name} meal. ' + \
@@ -30,12 +31,16 @@ class Customer(Base):
     email = Column(String())
     phone = Column(String())
     hunger_level = Column(Integer())
-    time_in = Column(DateTime())
-    time_out = Column(DateTime())
+    thirst_level = Column(Integer())
+
+    meal_id = Column(Integer(), ForeignKey('meals.id'))
+    drink_id = Column(Integer(), ForeignKey('drinks.id'))
 
     def __repr__(self):
         return f'Customer: {self.name} ' + \
-            f'has a hunger level of {self.hunger_level}/10'
+            f'has a hunger level of {self.hunger_level}/10' + \
+            f'and a thirst level of {self.thirst_level}'
+    
     
 class Drink(Base):
     __tablename__ = 'drinks'
@@ -43,6 +48,9 @@ class Drink(Base):
     id = Column(Integer(), primary_key=True)
     name = Column(String())
     cost = Column(Integer())
+
+    customers = relationship('Customer', backref=backref('drinks'))
+
 
     def __repr__(self):
         return f'This is the {self.name} drink. ' + \

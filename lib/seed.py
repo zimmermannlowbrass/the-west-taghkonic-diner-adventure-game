@@ -33,14 +33,17 @@ if __name__ == '__main__':
             age = random.randint(1,100),
             email = fake.company_email(),
             phone = fake.phone_number(),
-            hunger_level = random.randint(1,10)
+            hunger_level = random.randint(1,10),
+            thirst_level = random.randint(1,10),
+            drink_id = random.randint(1,20),
+            meal_id = random.randint(1,50)
         )
     for i in range(1000)]
 
     drinks = [
         Drink(
             name = fake.word(),
-            cost = random.randint(1,5)
+            cost = random.randint(1,5),
         )
     for i in range(20)]
 
