@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 
 from helpers import (
-    enter_name_ready, customer_incoming,
-    take_an_order, choose_a_task,
+    customer_incoming, take_an_order,
     give_the_check, go_hang_out_with_a_customer
+)
+
+from helpers_intro import (
+    enter_name_ready, choose_a_task,
+    read_the_rules
 )
 
 
@@ -14,14 +18,11 @@ if __name__ == '__main__':
     total_money = 0
 
     user_name = enter_name_ready()
-
-    while stress < 50 and len(seated_customers) < 5:
-        print(f'\n********** CURRENT STRESS LEVEL: {stress} **********\n')
-
-        open_tables, new_customer = customer_incoming(open_tables, seated_customers)
-        stress += (new_customer.hunger_level + new_customer.thirst_level)
-
-        print(f'\n********** CURRENT STRESS LEVEL: {stress} **********\n')
+    read_the_rules()
+    while stress < 40 and len(seated_customers) < 5:
+        print(f'\n\t********** CURRENT STRESS LEVEL: {stress} **********\n')
+        open_tables, added_stress = customer_incoming(open_tables, seated_customers)
+        stress += added_stress
         choice = choose_a_task()
         if (choice == 1):
             go_hang_out_with_a_customer(seated_customers)

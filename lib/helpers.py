@@ -12,23 +12,6 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 
-def enter_name_ready():
-    print('*****\n*****\n*****\n\nWELCOME TO THE WEST TAGHKONCI DINER ADVENTURE GAME!!!\n\n*****\n*****\n*****\n')
-    user_name = None
-    while not user_name:
-        user_name = input('Please enter your name: ').title()
-    print('\nNice to meet you, ' + user_name + '!!! Okay, here we go!\n\n*****\n*****')
-    return user_name
-
-
-
-    
-def choose_a_task():
-    choice = input(f'What action would you like to take? Type your response:\n 1: Go hangout with a customer \n 2: Take an order \n 3: Give someone the check\n')
-    while int(choice) not in [1, 2, 3]:
-        choice = input(f'\nOOPS! You entered a wrong choice. Try again:\n 1: Go hangout with a customer \n 2: Take an order \n 3: Give someone the check\n')
-    return int(choice)
-
     
 def customer_incoming(open_tables, seated_customers):
     customer = session.query(Customer).filter(Customer.id == random.randint(0,1000)).first()
@@ -39,7 +22,8 @@ def customer_incoming(open_tables, seated_customers):
         table_location = input(f'Sorry! You entered an unavailable table! These tables {[table for table in open_tables]} are available: \n')
     customer.table = int(table_location)
     seated_customers.append(customer)
-    return [table for table in open_tables if table != int(table_location)], customer
+    print(f'\n*****\n\tFYI - {customer.name} will add {customer.hunger_level + customer.thirst_level} stress!\n*****\n')
+    return [table for table in open_tables if table != int(table_location)], int(customer.hunger_level + customer.thirst_level)
 
 
 def choose_a_table(seated_customers):
@@ -67,7 +51,7 @@ def go_hang_out_with_a_customer(seated_customers):
         return
     drink = session.query(Drink).filter(Drink.id == customer.drink_id).first()
     meal = session.query(Meal).filter(Meal.id == customer.meal_id).first()
-    print(f'\n*****\n{customer.name} let\'s you know a little about themselves:\n\n{customer}')
+    print(f'\n*****\n*****\n\n{customer.name} let\'s you know a little about themselves:\n\n{customer}')
     print(f'{customer.name} would like the {drink} for their drink.')
     print(f'{customer.name} would like the {meal} for their meal.')
 
@@ -111,17 +95,7 @@ def take_an_order(seated_customers):
 
 
 def give_the_check(open_tables, seated_customers):
-    customer_choices = ''
-    for x in range(len(seated_customers)):
-        customer_choices += (str(seated_customers[x].table))
-        customer_choices += f'. {seated_customers[x].name} \n'
-    customer_choice = input(f'\nWho would you like to take go give the check to?\n{customer_choices}')
-    while int(customer_choice) not in [1, 2, 3, 4, 5]:
-        customer_choice = input(f'\nOOPS! That\'s not a table. Here are the tables:\n{customer_choices}')
-    customer = None
-    for choices in seated_customers:
-        if choices.table == int(customer_choice):
-            customer = choices
+    customer = choose_a_table(seated_customers)
     if not customer:
         print('\nYou arrive at an empty table and stand there in silence..........')
         return 0, 0
@@ -135,11 +109,10 @@ def give_the_check(open_tables, seated_customers):
         earned_money += meal.cost
     print(f'Congratulations! You earned ${earned_money}!')
 
-    seated_customers.pop(int(customer_choice) - 1)
+    seated_customers.pop(seated_customers.index(customer))
     open_tables.append(customer.table)
     open_tables.sort()
 
-    print(seated_customers, open_tables)
     return earned_money, int(customer.hunger_level + customer.thirst_level)
 
 
