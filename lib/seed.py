@@ -20,9 +20,17 @@ if __name__ == '__main__':
     session.query(Drink).delete()
     session.commit()
 
+    meal_options = [
+        'egg', 'bread', 'ham', 'cheese', 'pie',
+        'bacon', 'pancakes', 'sandwich', 'granola', 'pasta',
+        'soup', 'tomato', 'onion', 'sausage', 'french fries',
+        'toast', 'strawberries', 'apples', 'bluberries', 'green beans',
+        'broccoli', 'bananas', 'yogurt', 'tacos', 'seafood'
+    ]
+
     meals = [
         Meal(
-            name = fake.word(),
+            name = random.choice(meal_options),
             cost = random.randint(1, 20)
         )
     for i in range(50)]
@@ -40,10 +48,15 @@ if __name__ == '__main__':
         )
     for i in range(1000)]
 
+    drink_options = [
+        'water', 'coffee', 'red wine', 'white wine', 'espresso',
+        'beer', 'seltzer', 'soda', 'tea', 'juice'
+    ]
+
     drinks = [
         Drink(
-            name = fake.word(),
-            cost = random.randint(1,5),
+            name = random.choice(drink_options),
+            cost = random.randint(1,20),
         )
     for i in range(20)]
 

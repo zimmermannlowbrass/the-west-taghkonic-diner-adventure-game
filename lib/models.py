@@ -19,8 +19,7 @@ class Meal(Base):
     customers = relationship('Customer', backref=backref('meals'))
 
     def __repr__(self):
-        return f'This is the {self.name} meal. ' + \
-            f'Price : {self.cost}'
+        return f'{self.name} meal (price : {self.cost})'
     
 class Customer(Base):
     __tablename__ = 'customers'
@@ -53,5 +52,4 @@ class Drink(Base):
 
 
     def __repr__(self):
-        return f'This is the {self.name} drink. ' + \
-            f'Price : {self.cost}'
+        return f'{self.name} drink (price : {self.cost})'
