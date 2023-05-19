@@ -29,38 +29,42 @@ def choose_a_task():
         choice = input(f'\nOOPS! You entered a wrong choice. Try again:\n 1: Go hangout with a customer \n 2: Take an order \n 3: Give someone the check\n')
     return int(choice)
 
-
-
     
 def customer_incoming(open_tables, seated_customers):
     customer = session.query(Customer).filter(Customer.id == random.randint(0,1000)).first()
+    possible_choices = [str(table) for table in open_tables]
     print(f'\n*****\nLooks like we have a customer coming! Welcome in {customer.name}! Let\'s put them at a table...\n')
     table_location = input(f'Which table should we put {customer.name} at? We have table numbers {[table for table in open_tables]} available: \n')
-    while int(table_location) not in open_tables:
+    while table_location not in possible_choices:
         table_location = input(f'Sorry! You entered an unavailable table! These tables {[table for table in open_tables]} are available: \n')
     customer.table = int(table_location)
     seated_customers.append(customer)
     return [table for table in open_tables if table != int(table_location)], customer
 
 
-
-
-def go_hang_out_with_a_customer(seated_customers):
+def choose_a_table(seated_customers):
+    possible_choices = ['1', '2', '3', '4', '5']
     customer_choices = ''
     for x in range(len(seated_customers)):
         customer_choices += (str(seated_customers[x].table))
         customer_choices += f'. {seated_customers[x].name} \n'
-    customer_choice = input(f'\nWho would you like to take go and hang out with?\n{customer_choices}')
-    while int(customer_choice) not in [1, 2, 3, 4, 5]:
+    customer_choice = input(f'\nWhich table would you like to go to?\n{customer_choices}')
+    while customer_choice not in possible_choices:
         customer_choice = input(f'\nOOPS! That\'s not a table. Here are the tables:\n{customer_choices}')
     customer = None
     for choices in seated_customers:
         if choices.table == int(customer_choice):
             customer = choices
+    return customer
+
+
+
+
+def go_hang_out_with_a_customer(seated_customers):
+    customer = choose_a_table(seated_customers)
     if not customer:
         print('\nYou arrive at an empty table and stand there in silence..........')
         return
-    
     drink = session.query(Drink).filter(Drink.id == customer.drink_id).first()
     meal = session.query(Meal).filter(Meal.id == customer.meal_id).first()
     print(f'\n*****\n{customer.name} let\'s you know a little about themselves:\n\n{customer}')
@@ -72,20 +76,10 @@ def go_hang_out_with_a_customer(seated_customers):
 
 
 def take_an_order(seated_customers):
-    customer_choices = ''
-    for x in range(len(seated_customers)):
-        customer_choices += (str(seated_customers[x].table))
-        customer_choices += f'. {seated_customers[x].name} \n'
-    customer_choice = input(f'\nWho would you like to take an order from?\n{customer_choices}')
-    while int(customer_choice) not in [1, 2, 3, 4, 5]:
-        customer_choice = input(f'\nOOPS! That\'s not a table. Here are the tables:\n{customer_choices}')
-    customer = None
-    for choices in seated_customers:
-        if choices.table == int(customer_choice):
-            customer = choices
+    customer = choose_a_table(seated_customers)
     if not customer:
         print('\nYou arrive at an empty table and stand there in silence..........')
-        return
+        return 0, 0
     
     choice = input(f'\nYou approach the table for {customer.name} to take their order: \n 1: What would you like to drink? \n 2: What would you like to eat? \n')
 

@@ -16,6 +16,8 @@ if __name__ == '__main__':
     user_name = enter_name_ready()
 
     while stress < 50 and len(seated_customers) < 5:
+        print(f'\n********** CURRENT STRESS LEVEL: {stress} **********\n')
+
         open_tables, new_customer = customer_incoming(open_tables, seated_customers)
         stress += (new_customer.hunger_level + new_customer.thirst_level)
 
@@ -26,12 +28,10 @@ if __name__ == '__main__':
         elif (choice == 2):
             destress, order = take_an_order(seated_customers)
             stress -= destress
-            print(f'\n********** CURRENT STRESS LEVEL: {stress} **********\n')
         elif (choice == 3):
             earned_money, destress = give_the_check(open_tables, seated_customers)
             total_money += earned_money
             stress -= destress
-            print(f'\n********** CURRENT STRESS LEVEL: {stress} **********\n')
     print(f'\n\n\n********** GAME OVER!!!**********\n\n\nIt looks like you made a total of ${total_money}\n\n')
         
 
