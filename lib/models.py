@@ -38,8 +38,8 @@ class Customer(Base):
 
     def __repr__(self):
         return f'Customer: {self.name} ' + \
-            f'has a hunger level of {self.hunger_level}/10' + \
-            f'and a thirst level of {self.thirst_level}'
+            f'has a hunger level of {self.hunger_level}/10 ' + \
+            f'and a thirst level of {self.thirst_level}/10'
     
     
 class Drink(Base):

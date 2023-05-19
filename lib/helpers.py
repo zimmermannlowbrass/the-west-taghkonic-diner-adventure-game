@@ -13,7 +13,7 @@ session = Session()
 
 
 def enter_name_ready():
-    print('*****\n*****\n\nWelcome to the Taghkonic Diner Adventure Game!\n\n*****\n*****\n')
+    print('*****\n*****\n*****\n\nWELCOME TO THE WEST TAGHKONCI DINER ADVENTURE GAME!!!\n\n*****\n*****\n*****\n')
     user_name = None
     while not user_name:
         user_name = input('Please enter your name: ').title()
@@ -23,24 +23,38 @@ def enter_name_ready():
     #     exit()
     
 def make_a_choice():
-    choice = input(f'What action would you like to take? Type your response:\n 1: Seat a customer \n 2: Take an order \n 3: Give someone the check')
+    choice = input(f'What action would you like to take? Type your response:\n 1: Go hangout with a customer \n 2: Take an order \n 3: Give someone the check\n')
     return int(choice)
 
     
 
 def customer_incoming(open_tables):
     customer = session.query(Customer).filter(Customer.id == random.randint(0,1000)).first()
-    print(f'Looks like we have a customer coming! Welcome in {customer.name}! Let\'s put them at a table')
-    table_location = input(f'Which table should we put them at? We have table numbers {[table for table in open_tables]} available! \n')
+    print(f'Looks like we have a customer coming! Welcome in {customer.name}! Let\'s put them at a table...')
+    table_location = input(f'Which table should we put {customer.name} at? We have table numbers {[table for table in open_tables]} available: \n')
     return [table for table in open_tables if table != int(table_location)], customer
 
 
-def take_request(seated_customers):
-    customer = seated_customers[0]
-    # 
-    # MAKE A WAY TO CHOOSE WHICH SEATED CUSTOMER YOU WANT TO HELP
-    # 
-    choice = input(f'You approach the table for {customer.name}.\n to take their order: \n 1: What would you like to drink? \n 2: What would you like to eat? \n')
+def go_hang_out_with_a_customer(seated_customers):
+    customer_choices = ''
+    for x in range(len(seated_customers)):
+        customer_choices += (str(x + 1))
+        customer_choices += f'. {seated_customers[x].name} \n'
+    customer_choice = input(f'Who would you like to take go and hang out with?\n {customer_choices}')
+    customer = seated_customers[int(customer_choice) - 1]
+    print(f'{customer.name} let\'s you know a little about themselves:\n')
+    print(customer)
+
+
+def take_an_order(seated_customers):
+    customer_choices = ''
+    for x in range(len(seated_customers)):
+        customer_choices += (str(x + 1))
+        customer_choices += f'. {seated_customers[x].name} \n'
+    customer_choice = input(f'Who would you like to take an order from?\n {customer_choices}')
+    customer = seated_customers[int(customer_choice) - 1]
+    
+    choice = input(f'You approach the table for {customer.name} to take their order: \n 1: What would you like to drink? \n 2: What would you like to eat? \n')
 
     if int(choice) == 1:
         drink = session.query(Drink).filter(Drink.id == customer.drink_id).first()

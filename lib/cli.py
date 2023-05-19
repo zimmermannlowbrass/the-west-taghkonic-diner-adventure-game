@@ -2,8 +2,8 @@
 
 from helpers import (
     enter_name_ready, customer_incoming,
-    take_request, make_a_choice,
-    give_the_check
+    take_an_order, make_a_choice,
+    give_the_check, go_hang_out_with_a_customer
 )
 
 
@@ -16,14 +16,16 @@ if __name__ == '__main__':
 
     enter_name_ready()
     while stress < 30:
+        open_tables, new_customer = customer_incoming(open_tables)
+        stress += (new_customer.hunger_level + new_customer.thirst_level)
+        seated_customers.append(new_customer)
+        print(f'\n********** CURRENT STRESS LEVEL: {stress} **********\n')
         choice = make_a_choice()
         if (choice == 1):
-            open_tables, new_customer = customer_incoming(open_tables)
-            stress += new_customer.hunger_level
-            stress += new_customer.thirst_level
+            go_hang_out_with_a_customer(seated_customers)
             seated_customers.append(new_customer)
         elif (choice == 2):
-            destress, order = take_request(seated_customers)
+            destress, order = take_an_order(seated_customers)
             stress -= destress
         elif (choice == 3):
             money = give_the_check()
