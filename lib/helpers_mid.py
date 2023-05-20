@@ -7,6 +7,8 @@ from models import Meal, Customer, Drink
 
 import random
 
+from helper_helpers import choose_a_table,  add_to_customer_database
+
 engine = create_engine("sqlite:///diner.db")
 Session = sessionmaker(bind=engine)
 session = Session()
@@ -28,22 +30,6 @@ def customer_incoming(open_tables, seated_customers):
     seated_customers.append(customer)
     print(f'\n*****\n\tFYI - {customer.name} will add {customer.hunger_level + customer.thirst_level} stress!\n*****\n')
     return [table for table in open_tables if table != int(table_location)], int(customer.hunger_level + customer.thirst_level)
-
-
-def choose_a_table(seated_customers):
-    possible_choices = ['1', '2', '3', '4', '5']
-    customer_choices = ''
-    for x in range(len(seated_customers)):
-        customer_choices += (str(seated_customers[x].table))
-        customer_choices += f'. {seated_customers[x].name} \n'
-    customer_choice = input(f'\nWhich table would you like to go to?\n{customer_choices}')
-    while customer_choice not in possible_choices:
-        customer_choice = input(f'\nOOPS! That\'s not a table. Here are the tables:\n{customer_choices}')
-    customer = None
-    for choices in seated_customers:
-        if choices.table == int(customer_choice):
-            customer = choices
-    return customer
 
 
 def go_hang_out_with_a_customer(seated_customers):
@@ -110,14 +96,3 @@ def give_the_check(open_tables, seated_customers):
     open_tables.append(customer.table)
     open_tables.sort()
     return earned_money, int(customer.hunger_level + customer.thirst_level)
-
-
-def add_to_customer_database(customer):
-    customer_info = f"""
-        Name: {customer.name}
-        Age: {customer.age}
-        Email Address: {customer.email}
-        Phone Number: {customer.phone}\n
-    """
-    with open('customers_served.txt', mode='a', encoding='utf-8') as database:
-        database.write(customer_info)
