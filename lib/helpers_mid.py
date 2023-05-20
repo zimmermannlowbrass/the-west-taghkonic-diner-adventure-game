@@ -11,8 +11,7 @@ engine = create_engine("sqlite:///diner.db")
 Session = sessionmaker(bind=engine)
 session = Session()
 
-
-    
+ 
 def customer_incoming(open_tables, seated_customers):
     customer = session.query(Customer).filter(Customer.id == random.randint(0,1000)).first()
     possible_choices = [str(table) for table in open_tables]
@@ -42,8 +41,6 @@ def choose_a_table(seated_customers):
     return customer
 
 
-
-
 def go_hang_out_with_a_customer(seated_customers):
     customer = choose_a_table(seated_customers)
     if not customer:
@@ -54,8 +51,6 @@ def go_hang_out_with_a_customer(seated_customers):
     print(f'\n*****\n*****\n\n{customer.name} let\'s you know a little about themselves:\n\n{customer}')
     print(f'{customer.name} would like the {drink} for their drink.')
     print(f'{customer.name} would like the {meal} for their meal.')
-
-
 
 
 
@@ -92,14 +87,12 @@ def take_an_order(seated_customers):
         return 0, 0
 
 
-
-
 def give_the_check(open_tables, seated_customers):
     customer = choose_a_table(seated_customers)
     if not customer:
         print('\nYou arrive at an empty table and stand there in silence..........')
         return 0, 0
-    
+    add_to_customer_database(customer)
     earned_money = 0
     if customer.thirst_level == 0:
         drink = session.query(Drink).filter(Drink.id == customer.drink_id).first()
@@ -108,11 +101,18 @@ def give_the_check(open_tables, seated_customers):
         meal = session.query(Meal).filter(Meal.id == customer.meal_id).first()
         earned_money += meal.cost
     print(f'Congratulations! You earned ${earned_money}!')
-
     seated_customers.pop(seated_customers.index(customer))
     open_tables.append(customer.table)
     open_tables.sort()
-
     return earned_money, int(customer.hunger_level + customer.thirst_level)
 
 
+def add_to_customer_database(customer):
+    customer_info = f"""
+        Name: {customer.name}
+        Age: {customer.age}
+        Email Address: {customer.email}
+        Phone Number: {customer.phone}\n
+    """
+    with open('customers_served.txt', mode='a', encoding='utf-8') as database:
+        database.write(customer_info)
