@@ -2,8 +2,7 @@
 
 - Try and make as much money as you can without getting too stressed out!
 - If you get too stressed out... GAME OVER!
-
-***
+*********************
 
 ## Rules
 
@@ -24,9 +23,6 @@ Here are a couple things to note:
 - Another customer is already at the door.
 - If you get too stressed or the restruant gets too full, it's GAME OVER!
 
-
-
-
 ### Starting up
 
 First, you will be asked in a prompt whether or not you have played the game before.
@@ -37,9 +33,9 @@ If this is your first time playing:
 - Then, you will be asked if you would like the rules explained.
 
 Now the game begins...
-***
+*********************
 
-# GamePlay
+## GamePlay
 
 ### Step One: A customer arrives
 
@@ -51,9 +47,39 @@ As an employee of the West Taghkonic Diner, you must tend to any new customers w
 
 ### Step Two: Get to know, Take an order, Give a receipt
 
+Here, you have a few choices (but you can only pick one!)
+
+1. You can get to know a customer:
+    Feel free to mingle with any of the customers!
+    If you speak to them, they will tell you how hungry/thirsty they are
+    They will also tell you how much their items cost
+
+2. You can take a customer's order:
+    Even if you don't know what the customer wants, you can go ahead and take their order.
+    You can only take one order: meal or drink
+    This should lower there stress
+
+3. You can check the customer out:
+    Here, you can give the customer the check.
+    If you were able to complete any orders of theirs, you will get the money for those items back.
+    If you didn't, that's okay!
+    Your stress will still go down based on however stressed the customer was
 
 ### Step Three: REPEAT!
 
 After you complete one of the available actions in Stage Two, the cycle will begin again!!
-Back to Step 1!
+Back to Step 1! Keep the restruant moving! Make that money!
 
+### GAMEOVER
+
+The game is over when your stress hits above 40 or if all five tables are full.
+Count your cash and pat yourself on the back. This is a hard job.
+*********************
+
+## Tips and Tricks
+
+- Keep an eye on how much stress each customer is coming in with!
+- Low stress customers may be better off just being given the check
+- Don't talk to too many people! Remember, you are a server and need to remember this in your head
+- Don't fret about the cash. Keep the stress low and the money will flow
+- MAKE SURE TO HAVE FUN!!
