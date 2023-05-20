@@ -6,7 +6,7 @@
 
 ## Rules
 
-Congratulations! You are now the newest employee of the greatest diner in the world! We are proud to have you on our team.
+Congratulations! You are now the newest employee of the greatest diner in the world! We are proud to have you on our team. :smile:
 Your goal is simple, tend to the customers who come in the restruant.
 You need to seat them, take their order, and give them their check (sort of like diner dash, but better!).
 Here are a couple things to note:
@@ -73,7 +73,7 @@ Back to Step 1! Keep the restruant moving! Make that money!
 ### GAMEOVER
 
 The game is over when your stress hits 50 or above OR if all five tables are full.
-Count your cash and pat yourself on the back. This is a hard job.
+Count your cash and pat yourself on the back!
 *********************
 
 ## Tips and Tricks

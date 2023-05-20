@@ -6,8 +6,7 @@ from helpers_mid import (
 )
 
 from helpers_begin_end import (
-    enter_name_ready, choose_a_task,
-    read_the_rules, game_over
+    enter_name_ready, choose_a_task, game_over
 )
 
 
@@ -18,7 +17,6 @@ if __name__ == '__main__':
     total_money = 0
 
     user_name = enter_name_ready()
-    read_the_rules()
     while stress < 50 and len(seated_customers) < 5:
         print(f'\n\t********** CURRENT STRESS LEVEL: {stress} **********\n')
         open_tables, added_stress = customer_incoming(open_tables, seated_customers)

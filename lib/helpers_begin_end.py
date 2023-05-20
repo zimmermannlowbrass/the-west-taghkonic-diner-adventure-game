@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 def enter_name_ready():
-    print('*****\n*****\n*****\n*****\n\n\n\tWELCOME TO THE WEST TAGHKONCI DINER ADVENTURE GAME!!!\n\n\n*****\n*****\n*****\n*****\n')
+    print('*****\n*****\n*****\n*****\n\n\n\tWELCOME TO THE WEST TAGHKONIC DINER ADVENTURE GAME!!!\n\n\n*****\n*****\n*****\n*****\n')
     choice = input(f'Have you played this game before?\n 1: Yes \n 2: No\n')
     while choice not in ['1', '2']:
         choice = input(f'\nOOPS! You entered a wrong choice. Try again: \nHave you played this game before?\n 1: Yes \n 2: No\n')
@@ -26,7 +26,7 @@ def read_the_rules():
         - The only way to figure these things out is to ask them
         - But once you ask, or serve them, or check them out, BE READY!
         - Another customer is already at the door.
-        - If you get too stressed or the restruant gets too full, it's GAME OVER!
+        - If you get too stressed (MAX 50 STRESS) or the restruant gets too full, it's GAME OVER!
     """
     print(rules)
 
