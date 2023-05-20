@@ -46,7 +46,13 @@ def choose_a_task():
     return int(choice)
     
 
-def game_over(user_name, money):
-    print(f'\n\n\n********** GAME OVER!!!**********\n\n\nIt looks like you made a total of ${money}\n\nBetter luck next time, {user_name}!')
+def game_over(user_name, money, stress, seated_customers):
+    if stress >= 50:
+        print('\n\n**********OH NO!! Looks like you got a little too stressed from everything that is going on!!**********\n\n')
+    elif len(seated_customers) == 5:
+        print('\n\n**********OH NO!! Looks like all the tables are full! More customers are coming and there is no where for them to sit!!**********\n**********STRESS GOES THROUGH THE ROOF!**********\n\n')
+    else:
+        print('\n\n**********OH NO!! DOUBLE STRESS!! You are too stressed AND there is no place to sit the incoming customers!! NOO!!!!**********\n\n')
+    print(f'\n\n\n\t********** GAME OVER!!!**********\n\n\nIt looks like you made a total of ${money}\n\nBetter luck next time, {user_name}!')
     with open('highscores.txt', mode='a', encoding='utf-8') as highscores:
-        highscores.write(f'Name: {user_name}\nScore: {money}')
+        highscores.write(f'\nName: {user_name}\nScore: {money}\n')

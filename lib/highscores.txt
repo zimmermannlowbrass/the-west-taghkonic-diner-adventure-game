@@ -1,4 +1,0 @@
-Name:Aidan
-Score:0Name: Bob
-Score: 39Name: Aidan Zimmermann
-Score: 19

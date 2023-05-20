@@ -13,6 +13,11 @@ session = Session()
 
  
 def customer_incoming(open_tables, seated_customers):
+    if seated_customers:
+        dice_roll = random.randint(0,5)
+        if dice_roll == 1:
+            print('\n*****\n*****\n\n\GOOD NEWS!\n\tLooks like no customers are waiting right now!!!\n*****\n*****\n\n')
+            return open_tables, 0
     customer = session.query(Customer).filter(Customer.id == random.randint(0,1000)).first()
     possible_choices = [str(table) for table in open_tables]
     print(f'\n*****\nLooks like we have a customer coming! Welcome in {customer.name}! Let\'s put them at a table...\n')

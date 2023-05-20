@@ -80,6 +80,7 @@ Count your cash and pat yourself on the back!
 
 ## Tips and Tricks
 
+- WATCH OUT FOR THE TABLES BECOMING TOO FULL!!
 - Keep an eye on how much stress each customer is coming in with!
 - Low stress customers may be better off just being given the check
 - Don't be too chatty! Remember, you are a server and need to remember this in your head
