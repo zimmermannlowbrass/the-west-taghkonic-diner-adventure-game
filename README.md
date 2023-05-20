@@ -16,7 +16,7 @@ Here are a couple things to note:
 - You can serve them whenever you like and give them a check whenever you like!
 - Giving them food makes you and them less stressed
 - Checking them out makes you and them less stressed AND if you served them, it gives you money!
-- The TRICK is that you do not know how hungry or thirsty they are
+- THE TRICK IS THAT YOU DO NOT KNOW HOW HUNGRY OR THIRSTY THEY ARE!
 - OR how much money they are going to spend
 - The only way to figure these things out is to ask them
 - But once you ask, or serve them, or check them out, BE READY!
