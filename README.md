@@ -72,7 +72,7 @@ Back to Step 1! Keep the restruant moving! Make that money!
 
 ### GAMEOVER
 
-The game is over when your stress hits above 40 or if all five tables are full.
+The game is over when your stress hits 50 or above OR if all five tables are full.
 Count your cash and pat yourself on the back. This is a hard job.
 *********************
 
@@ -80,6 +80,6 @@ Count your cash and pat yourself on the back. This is a hard job.
 
 - Keep an eye on how much stress each customer is coming in with!
 - Low stress customers may be better off just being given the check
-- Don't talk to too many people! Remember, you are a server and need to remember this in your head
+- Don't be too chatty! Remember, you are a server and need to remember this in your head
 - Don't fret about the cash. Keep the stress low and the money will flow
 - MAKE SURE TO HAVE FUN!!

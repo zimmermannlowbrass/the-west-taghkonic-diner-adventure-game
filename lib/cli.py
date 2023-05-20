@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 
-from helpers import (
+from helpers_mid import (
     customer_incoming, take_an_order,
     give_the_check, go_hang_out_with_a_customer
 )
 
-from helpers_intro import (
+from helpers_begin_end import (
     enter_name_ready, choose_a_task,
-    read_the_rules
+    read_the_rules, game_over
 )
 
 
@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
     user_name = enter_name_ready()
     read_the_rules()
-    while stress < 40 and len(seated_customers) < 5:
+    while stress < 50 and len(seated_customers) < 5:
         print(f'\n\t********** CURRENT STRESS LEVEL: {stress} **********\n')
         open_tables, added_stress = customer_incoming(open_tables, seated_customers)
         stress += added_stress
@@ -33,7 +33,7 @@ if __name__ == '__main__':
             earned_money, destress = give_the_check(open_tables, seated_customers)
             total_money += earned_money
             stress -= destress
-    print(f'\n\n\n********** GAME OVER!!!**********\n\n\nIt looks like you made a total of ${total_money}\n\n')
+    game_over(user_name, total_money)
         
 
     
