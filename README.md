@@ -4,6 +4,8 @@
 - If you get too stressed out... GAME OVER!
 *********************
 
+![demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWM4NDljODBkMDYyOTg5MDcwNjc4OWYxN2ExZDBkODk0OWFjZTNjZSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/g36icvN4gG7bAFGABo/giphy.gif)
+
 ## Rules
 
 Congratulations! You are now the newest employee of the greatest diner in the world! We are proud to have you on our team. :smile:
