@@ -7,7 +7,9 @@ from models import Meal, Customer, Drink
 
 import random
 
-from helper_helpers import choose_a_table,  add_to_customer_database
+from helper_helpers import (
+    choose_a_table,  add_to_customer_database
+)
 
 engine = create_engine("sqlite:///diner.db")
 Session = sessionmaker(bind=engine)
@@ -42,7 +44,6 @@ def go_hang_out_with_a_customer(seated_customers):
     print(f'\n*****\n*****\n\n{customer.name} let\'s you know a little about themselves:\n\n{customer}')
     print(f'{customer.name} would like the {drink} for their drink.')
     print(f'{customer.name} would like the {meal} for their meal.')
-
 
 
 def take_an_order(seated_customers):

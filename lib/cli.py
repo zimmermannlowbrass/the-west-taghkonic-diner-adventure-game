@@ -9,6 +9,8 @@ from helpers_begin_end import (
     enter_name_ready, choose_a_task, game_over
 )
 
+from helper_helpers import take_down_data
+
 
 if __name__ == '__main__':
     open_tables = [1, 2, 3, 4, 5]
@@ -31,6 +33,7 @@ if __name__ == '__main__':
             earned_money, destress = give_the_check(open_tables, seated_customers)
             total_money += earned_money
             stress -= destress
+        take_down_data(user_name, total_money, stress, choice)
     game_over(user_name, total_money, stress, seated_customers)
         
 
