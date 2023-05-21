@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-from helpers_mid import (
+from helpers_main import (
     customer_incoming, take_an_order,
-    give_the_check, go_hang_out_with_a_customer
+    give_the_check, assess_customer_hunger_thirst
 )
 
 from helpers_begin_end import (
@@ -25,7 +25,7 @@ if __name__ == '__main__':
         stress += added_stress
         choice = choose_a_task()
         if (choice == 1):
-            go_hang_out_with_a_customer(seated_customers)
+            assess_customer_hunger_thirst(seated_customers)
         elif (choice == 2):
             destress, order = take_an_order(seated_customers)
             stress -= destress

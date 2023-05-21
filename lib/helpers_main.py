@@ -34,7 +34,7 @@ def customer_incoming(open_tables, seated_customers):
     return [table for table in open_tables if table != int(table_location)], int(customer.hunger_level + customer.thirst_level)
 
 
-def go_hang_out_with_a_customer(seated_customers):
+def assess_customer_hunger_thirst(seated_customers):
     customer = choose_a_table(seated_customers)
     if not customer:
         print('\nYou arrive at an empty table and stand there in silence..........')

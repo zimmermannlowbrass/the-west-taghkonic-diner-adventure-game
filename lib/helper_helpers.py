@@ -29,14 +29,14 @@ def add_to_customer_database(customer):
 
 def take_down_data(user_name, total_money, stress, seated_customers, choice):
     if choice == 1:
-        choice = 'Talk to/get to know the customer.'
+        choice = 'Assess a cumstomer\'s order info.'
     elif choice == 2:
-        choice = 'Takee an order from a customer.'
+        choice = 'Take an order from a customer.'
     elif choice == 3:
         choice = 'Give a receipt to a customer.'
     customer_info = ''
     for customer in seated_customers:
-        customer_info += f'\t{customer}\n'
+        customer_info += f'{customer}\n'
     text = f"""
         Username : {user_name}
         Choice : {choice}
