@@ -16,17 +16,36 @@ def enter_name_ready():
 
 def read_the_rules():
     rules = """
-        - Every customer who comes in is thirsty and hungry
-        - Their thirst and hunger levels will be added to your stress levels
-        - You can serve them whenever you like and give them a check whenever you like!
-        - Giving them food makes you and them less stressed
-        - Checking them out makes you and them less stressed AND if you served them, it gives you money!
-        - THE TRICK IS THAT YOU DO NOT KNOW HOW HUNGRY OR THIRSTY THEY ARE!
-        - OR how much money they are going to spend
-        - The only way to figure these things out is to ask them
-        - But once you ask, or serve them, or check them out, BE READY!
-        - Another customer is already at the door.
-        - If you get too stressed (MAX 50 STRESS) or the restruant gets too full, it's GAME OVER!
+        GENERAL
+        *******
+        Make sure your stress level stays below 50 AND that the restraunt has enough tables available!!
+
+        
+        HOW TO PLAY
+        *******
+        - First : You must seat a customer
+        To seat a customer, simple pick an available table by entering the number. Then press enter
+        You will then be notified how stressful this customer is!
+
+        - Second: Make a choice!
+        You can either assess a customer's needs, take their order (drink or meal), or give them a receipt.
+        Couple things to note here:
+            - Assessing a customer's needs is the only way to see what is stressing them (thirst or hunger)
+            - You can take their order WITHOUT assessing their needs
+            - When you check them out, you can reduce their stress from your stress.
+
+        - Third: Repeat!!
+        Watch out! Another customer is likely on their way! And the cycle starts again...
+
+        
+        HOW TO SCORE POINTS:
+        *******
+        Every drink or meal you serve a customer has an assigned value.
+        When you check out the customer, you will earn that money (ONLY IF YOU SERVED THEM SAID ITEM!)
+        Assessing a customer's needs is the only way to see the value of their orders ahead of time
+
+
+        BEST OF LUCK!!!
     """
     print(rules)
 
