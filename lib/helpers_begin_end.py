@@ -40,9 +40,9 @@ def get_user_name():
     
 
 def choose_a_task():
-    choice = input(f'What action would you like to take? Type your response:\n 1: Assess a customer\'s hunger and thirst \n 2: Take an order \n 3: Give someone the check\n')
-    while choice not in ['1', '2', '3']:
-        choice = input(f'\nOOPS! You entered a wrong choice. Try again:\n 1: Assess a customer\'s hunger and thirst \n 2: Take an order \n 3: Give someone the check\n')
+    choice = input(f'What action would you like to take? Type your response:\n 1: Assess a customer\'s hunger and thirst \n 2: Take an order \n 3: Give someone the check\n 4: GIVE UP!')
+    while choice not in ['1', '2', '3', '4']:
+        choice = input(f'\nOOPS! You entered a wrong choice. Try again:\n 1: Assess a customer\'s hunger and thirst \n 2: Take an order \n 3: Give someone the check\n 4: GIVE UP!')
     return int(choice)
     
 

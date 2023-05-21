@@ -34,6 +34,8 @@ def take_down_data(user_name, total_money, stress, seated_customers, choice):
         choice = 'Take an order from a customer.'
     elif choice == 3:
         choice = 'Give a receipt to a customer.'
+    elif choice == 4:
+        choice = 'End the game.'
     customer_info = ''
     for customer in seated_customers:
         customer_info += f'{customer}\n'

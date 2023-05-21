@@ -33,6 +33,8 @@ if __name__ == '__main__':
             earned_money, destress = give_the_check(open_tables, seated_customers)
             total_money += earned_money
             stress -= destress
+        elif (choice == 4):
+            stress += 50
         take_down_data(user_name, total_money, stress, seated_customers, choice)
     game_over(user_name, total_money, stress, seated_customers)
         
