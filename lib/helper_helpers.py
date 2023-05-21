@@ -27,18 +27,25 @@ def add_to_customer_database(customer):
         database.write(customer_info)
 
 
-def take_down_data(user_name, total_money, stress, choice):
+def take_down_data(user_name, total_money, stress, seated_customers, choice):
     if choice == 1:
         choice = 'Talk to/get to know the customer.'
     elif choice == 2:
         choice = 'Takee an order from a customer.'
     elif choice == 3:
         choice = 'Give a receipt to a customer.'
+    customer_info = ''
+    for customer in seated_customers:
+        customer_info += f'\t{customer}\n'
     text = f"""
         Username : {user_name}
         Choice : {choice}
-        Current : {stress}
-        Money : {total_money}
+        Current Stress : {stress}
+        Current Money : {total_money}
+        Current Customers :
+
+        -----------
+        {customer_info}
     """
     with open(f'{user_name}_gameplay.txt', mode='a', encoding='utf-8') as database:
         database.write(text)

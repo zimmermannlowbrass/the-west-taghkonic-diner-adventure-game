@@ -1,0 +1,18 @@
+
+        Username : Aidan
+        Choice : Talk to/get to know the customer.
+        Current Stress : 3
+        Current Money : 0
+        Current Customers :
+            	Customer: Andrea Martinez has a hunger level of 2/10 and a thirst level of 1/10
+
+    
+        Username : Aidan
+        Choice : Takee an order from a customer.
+        Current Stress : 11
+        Current Money : 0
+        Current Customers :
+            	Customer: Andrea Martinez has a hunger level of 2/10 and a thirst level of 1/10
+	Customer: Katherine Sweeney has a hunger level of 0/10 and a thirst level of 8/10
+
+    
