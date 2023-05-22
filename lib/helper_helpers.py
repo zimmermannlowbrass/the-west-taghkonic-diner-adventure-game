@@ -47,7 +47,7 @@ def take_down_data(user_name, total_money, stress, seated_customers, choice):
         Current Customers :
 
         -----------
-        {customer_info}
+    {customer_info}
     """
     with open(f'{user_name}_gameplay.txt', mode='a', encoding='utf-8') as database:
         database.write(text)

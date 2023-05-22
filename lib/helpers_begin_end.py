@@ -18,13 +18,13 @@ def read_the_rules():
     rules = """
         GENERAL
         *******
-        Make sure your stress level stays below 50 AND that the restraunt has enough tables available!!
+        Make sure your stress level stays below 50 AND that the restaurant has enough tables available!!
 
         
         HOW TO PLAY
         *******
         - First : You must seat a customer
-        To seat a customer, simple pick an available table by entering the number. Then press enter
+        To seat a customer, simply pick an available table by entering the number. Then press enter
         You will then be notified how stressful this customer is!
 
         - Second: Make a choice!
@@ -74,4 +74,4 @@ def game_over(user_name, money, stress, seated_customers):
         print('\n\n**********OH NO!! DOUBLE STRESS!! You are too stressed AND there is no place to sit the incoming customers!! NOO!!!!**********\n\n')
     print(f'\n\n\n\t********** GAME OVER!!!**********\n\n\nIt looks like you made a total of ${money}\n\nBetter luck next time, {user_name}!')
     with open('highscores.txt', mode='a', encoding='utf-8') as highscores:
-        highscores.write(f'Name: {user_name}\nScore: {money}\n')
+        highscores.write(f'\nName: {user_name}\nScore: {money}\n')

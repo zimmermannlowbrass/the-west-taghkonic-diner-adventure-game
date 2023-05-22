@@ -111,3 +111,21 @@
         Phone Number: +1-991-174-0496x694
 
     
+        Name: Jeff Jones
+        Age: 44
+        Email Address: mrodriguez@cole.com
+        Phone Number: (674)313-3177x862
+
+    
+        Name: Megan Gordon
+        Age: 38
+        Email Address: michael69@hoffman.com
+        Phone Number: (311)269-3294x435
+
+    
+        Name: Heather Stephens
+        Age: 29
+        Email Address: brandisteele@ashley.com
+        Phone Number: (667)834-4516x4665
+
+    

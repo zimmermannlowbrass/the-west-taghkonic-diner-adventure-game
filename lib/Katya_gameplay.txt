@@ -1,0 +1,98 @@
+
+        Username : Katya
+        Choice : Assess a cumstomer's order info.
+        Current Stress : 17
+        Current Money : 0
+        Current Customers :
+
+        -----------
+        Customer: Jeff Jones has a hunger level of 10/10 and a thirst level of 7/10
+
+    
+        Username : Katya
+        Choice : Assess a cumstomer's order info.
+        Current Stress : 21
+        Current Money : 0
+        Current Customers :
+
+        -----------
+        Customer: Jeff Jones has a hunger level of 10/10 and a thirst level of 7/10
+Customer: Todd Ross has a hunger level of 3/10 and a thirst level of 1/10
+
+    
+        Username : Katya
+        Choice : Take an order from a customer.
+        Current Stress : 24
+        Current Money : 0
+        Current Customers :
+
+        -----------
+        Customer: Jeff Jones has a hunger level of 10/10 and a thirst level of 0/10
+Customer: Todd Ross has a hunger level of 3/10 and a thirst level of 1/10
+Customer: Heather Stephens has a hunger level of 6/10 and a thirst level of 7/10
+
+    
+        Username : Katya
+        Choice : Give a receipt to a customer.
+        Current Stress : 17
+        Current Money : 5
+        Current Customers :
+
+        -----------
+        Customer: Todd Ross has a hunger level of 3/10 and a thirst level of 1/10
+Customer: Heather Stephens has a hunger level of 6/10 and a thirst level of 7/10
+Customer: Megan Gordon has a hunger level of 2/10 and a thirst level of 1/10
+
+    
+        Username : Katya
+        Choice : Give a receipt to a customer.
+        Current Stress : 33
+        Current Money : 5
+        Current Customers :
+
+        -----------
+        Customer: Todd Ross has a hunger level of 3/10 and a thirst level of 1/10
+Customer: Heather Stephens has a hunger level of 6/10 and a thirst level of 7/10
+Customer: Daniel Garcia has a hunger level of 9/10 and a thirst level of 10/10
+
+    
+        Username : Katya
+        Choice : Take an order from a customer.
+        Current Stress : 36
+        Current Money : 5
+        Current Customers :
+
+        -----------
+        Customer: Todd Ross has a hunger level of 3/10 and a thirst level of 1/10
+Customer: Heather Stephens has a hunger level of 6/10 and a thirst level of 0/10
+Customer: Daniel Garcia has a hunger level of 9/10 and a thirst level of 10/10
+Customer: Mrs. Theresa Reeves MD has a hunger level of 8/10 and a thirst level of 1/10
+
+    
+        Username : Katya
+        Choice : Give a receipt to a customer.
+        Current Stress : 40
+        Current Money : 18
+        Current Customers :
+
+        -----------
+        Customer: Todd Ross has a hunger level of 3/10 and a thirst level of 1/10
+Customer: Daniel Garcia has a hunger level of 9/10 and a thirst level of 10/10
+Customer: Mrs. Theresa Reeves MD has a hunger level of 8/10 and a thirst level of 1/10
+Customer: Jackie Dunlap has a hunger level of 2/10 and a thirst level of 8/10
+
+    
+        Username : Katya
+        Choice : Take an order from a customer.
+        Current Stress : 35
+        Current Money : 18
+        Current Customers :
+
+        -----------
+        Customer: Todd Ross has a hunger level of 3/10 and a thirst level of 1/10
+Customer: Daniel Garcia has a hunger level of 9/10 and a thirst level of 10/10
+Customer: Mrs. Theresa Reeves MD has a hunger level of 0/10 and a thirst level of 1/10
+Customer: Jackie Dunlap has a hunger level of 2/10 and a thirst level of 8/10
+Customer: Hannah Turner has a hunger level of 1/10 and a thirst level of 2/10
+
+    
