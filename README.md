@@ -6,7 +6,7 @@
 
 ![demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWM4NDljODBkMDYyOTg5MDcwNjc4OWYxN2ExZDBkODk0OWFjZTNjZSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/g36icvN4gG7bAFGABo/giphy.gif)
 
-## Rules
+## Rules :hamburger:
 
 Congratulations! You are now the newest employee of the greatest diner in the world! We are proud to have you on our team. :smile:
 Your goal is simple, tend to the customers who come in the restruant.
@@ -25,7 +25,7 @@ Here are a couple things to note:
 - Another customer is already at the door.
 - If you get too stressed or the restruant gets too full, it's GAME OVER!
 
-### Starting up
+### Starting up :memo:
 
 First, you will be asked in a prompt whether or not you have played the game before.
 If you have played before:
@@ -39,7 +39,7 @@ Now the game begins...
 
 ## GamePlay
 
-### Step One: A customer arrives
+### :one: Step One: A customer arrives
 
 As an employee of the West Taghkonic Diner, you must tend to any new customers who arrive!
 - Find a table for this new customer to sit at of the available tables
@@ -47,7 +47,7 @@ As an employee of the West Taghkonic Diner, you must tend to any new customers w
 - Try and stay alert! You will be quickly prompted how much stress the new customer adds
 
 
-### Step Two: Get to know, Take an order, Give a receipt
+### :two: Step Two: Get to know, Take an order, Give a receipt
 
 Here, you have a few choices (but you can only pick one!)
 
@@ -67,18 +67,18 @@ Here, you have a few choices (but you can only pick one!)
     If you didn't, that's okay!
     Your stress will still go down based on however stressed the customer was
 
-### Step Three: REPEAT!
+### :three: Step Three: REPEAT!
 
 After you complete one of the available actions in Stage Two, the cycle will begin again!!
 Back to Step 1! Keep the restruant moving! Make that money!
 
-### GAMEOVER
+### GAMEOVER :trophy:
 
 The game is over when your stress hits 50 or above OR if all five tables are full.
 Count your cash and pat yourself on the back!
 *********************
 
-## Tips and Tricks
+## Tips and Tricks :pray:
 
 - WATCH OUT FOR THE TABLES BECOMING TOO FULL!!
 - Keep an eye on how much stress each customer is coming in with!
