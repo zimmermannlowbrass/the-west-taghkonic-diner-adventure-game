@@ -24,7 +24,7 @@ def customer_incoming(open_tables, seated_customers):
             return open_tables, 0
     customer = session.query(Customer).filter(Customer.id == random.randint(0,1000)).first()
     possible_choices = [str(table) for table in open_tables]
-    print(f'\n*****\nLooks like we have a customer coming! Welcome in {customer.name}! Let\'s put them at a table...\n')
+    print(f'\n*****\n\tLooks like we have a customer coming!\n\t\nWelcome in {customer.name}!\n\n\tLet\'s put them at a table...\n')
     table_location = input(f'Which table should we put {customer.name} at? We have table numbers {[table for table in open_tables]} available: \n')
     while table_location not in possible_choices:
         table_location = input(f'Sorry! You entered an unavailable table! These tables {[table for table in open_tables]} are available: \n')
@@ -52,7 +52,7 @@ def take_an_order(seated_customers):
         print('\nYou arrive at an empty table and stand there in silence..........')
         return 0, 0
     
-    choice = input(f'\nYou approach the table for {customer.name} to take their order: \n 1: What would you like to drink? \n 2: What would you like to eat? \n')
+    choice = input(f'\nYou approach the table for {customer.name} to take their order: \n 1: "What would you like to drink?" \n 2: "What would you like to eat?" \n')
 
     if int(choice) == 1:
         if customer.thirst_level == 0:
@@ -75,7 +75,7 @@ def take_an_order(seated_customers):
         return destress, meal
     
     else:
-        print('You stand there awkwardly and say nothing...')
+        print('\n\nOOPSIES! THAT IS NOT A CHOICE!!\n\nYou stand there awkwardly and say nothing...')
         return 0, 0
 
 

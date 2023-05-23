@@ -59,9 +59,9 @@ def get_user_name():
     
 
 def choose_a_task():
-    choice = input(f'What action would you like to take? Type your response:\n 1: Assess a customer\'s hunger and thirst \n 2: Take an order \n 3: Give someone the check\n 4: GIVE UP!')
+    choice = input(f'What action would you like to take? Type your response:\n 1: Assess a customer\'s hunger and thirst \n 2: Take an order \n 3: Give someone the check\n 4: GIVE UP!\n')
     while choice not in ['1', '2', '3', '4']:
-        choice = input(f'\nOOPS! You entered a wrong choice. Try again:\n 1: Assess a customer\'s hunger and thirst \n 2: Take an order \n 3: Give someone the check\n 4: GIVE UP!')
+        choice = input(f'\nOOPS! You entered a wrong choice. Try again:\n 1: Assess a customer\'s hunger and thirst \n 2: Take an order \n 3: Give someone the check\n 4: GIVE UP!\n')
     return int(choice)
     
 
@@ -73,5 +73,5 @@ def game_over(user_name, money, stress, seated_customers):
     else:
         print('\n\n**********OH NO!! DOUBLE STRESS!! You are too stressed AND there is no place to sit the incoming customers!! NOO!!!!**********\n\n')
     print(f'\n\n\n\t********** GAME OVER!!!**********\n\n\nIt looks like you made a total of ${money}\n\nBetter luck next time, {user_name}!')
-    with open('highscores.txt', mode='a', encoding='utf-8') as highscores:
-        highscores.write(f'\nName: {user_name}\nScore: {money}\n')
+    with open('./data/highscores.txt', mode='a', encoding='utf-8') as highscores:
+        highscores.write(f'Name: {user_name}\nScore: {money}\n\n')

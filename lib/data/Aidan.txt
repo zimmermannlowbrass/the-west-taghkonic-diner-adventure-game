@@ -1,0 +1,203 @@
+
+        Username : Aidan
+        Choice : Take an order from a customer.
+        Current Stress : 6
+        Current Money : 0
+        Current Customers :
+
+        -----------
+    Customer: Lisa Baldwin has a hunger level of 0/10 and a thirst level of 6/10
+
+    
+        Username : Aidan
+        Choice : Give a receipt to a customer.
+        Current Stress : 9
+        Current Money : 1
+        Current Customers :
+
+        -----------
+    Customer: Maria Larsen has a hunger level of 2/10 and a thirst level of 7/10
+
+    
+        Username : Aidan
+        Choice : Take an order from a customer.
+        Current Stress : 16
+        Current Money : 1
+        Current Customers :
+
+        -----------
+    Customer: Maria Larsen has a hunger level of 2/10 and a thirst level of 7/10
+Customer: Jeffrey Maxwell has a hunger level of 2/10 and a thirst level of 0/10
+
+    
+        Username : Aidan
+        Choice : Give a receipt to a customer.
+        Current Stress : 23
+        Current Money : 21
+        Current Customers :
+
+        -----------
+    Customer: Maria Larsen has a hunger level of 2/10 and a thirst level of 7/10
+Customer: April Fuller has a hunger level of 1/10 and a thirst level of 8/10
+
+    
+        Username : Aidan
+        Choice : Take an order from a customer.
+        Current Stress : 32
+        Current Money : 21
+        Current Customers :
+
+        -----------
+    Customer: Maria Larsen has a hunger level of 0/10 and a thirst level of 7/10
+Customer: April Fuller has a hunger level of 1/10 and a thirst level of 8/10
+Customer: Paul King has a hunger level of 5/10 and a thirst level of 6/10
+
+    
+        Username : Aidan
+        Choice : Give a receipt to a customer.
+        Current Stress : 41
+        Current Money : 22
+        Current Customers :
+
+        -----------
+    Customer: April Fuller has a hunger level of 1/10 and a thirst level of 8/10
+Customer: Paul King has a hunger level of 5/10 and a thirst level of 6/10
+Customer: David Vasquez has a hunger level of 10/10 and a thirst level of 6/10
+
+    
+        Username : Aidan
+        Choice : Give a receipt to a customer.
+        Current Stress : 41
+        Current Money : 22
+        Current Customers :
+
+        -----------
+    Customer: April Fuller has a hunger level of 1/10 and a thirst level of 8/10
+Customer: Paul King has a hunger level of 5/10 and a thirst level of 6/10
+Customer: David Vasquez has a hunger level of 10/10 and a thirst level of 6/10
+
+    
+        Username : Aidan
+        Choice : Give a receipt to a customer.
+        Current Stress : 41
+        Current Money : 22
+        Current Customers :
+
+        -----------
+    Customer: April Fuller has a hunger level of 1/10 and a thirst level of 8/10
+Customer: Paul King has a hunger level of 5/10 and a thirst level of 6/10
+Customer: David Vasquez has a hunger level of 10/10 and a thirst level of 6/10
+
+    
+        Username : Aidan
+        Choice : Take an order from a customer.
+        Current Stress : 31
+        Current Money : 22
+        Current Customers :
+
+        -----------
+    Customer: April Fuller has a hunger level of 1/10 and a thirst level of 8/10
+Customer: Paul King has a hunger level of 5/10 and a thirst level of 6/10
+Customer: David Vasquez has a hunger level of 10/10 and a thirst level of 0/10
+
+    
+        Username : Aidan
+        Choice : Give a receipt to a customer.
+        Current Stress : 30
+        Current Money : 31
+        Current Customers :
+
+        -----------
+    Customer: April Fuller has a hunger level of 1/10 and a thirst level of 8/10
+Customer: Paul King has a hunger level of 5/10 and a thirst level of 6/10
+Customer: Susan Luna has a hunger level of 1/10 and a thirst level of 8/10
+
+    
+        Username : Aidan
+        Choice : Take an order from a customer.
+        Current Stress : 32
+        Current Money : 31
+        Current Customers :
+
+        -----------
+    Customer: April Fuller has a hunger level of 1/10 and a thirst level of 0/10
+Customer: Paul King has a hunger level of 5/10 and a thirst level of 6/10
+Customer: Susan Luna has a hunger level of 1/10 and a thirst level of 8/10
+Customer: Ashley Phillips has a hunger level of 1/10 and a thirst level of 2/10
+
+    
+        Username : Aidan
+        Choice : Give a receipt to a customer.
+        Current Stress : 42
+        Current Money : 40
+        Current Customers :
+
+        -----------
+    Customer: Paul King has a hunger level of 5/10 and a thirst level of 6/10
+Customer: Susan Luna has a hunger level of 1/10 and a thirst level of 8/10
+Customer: Ashley Phillips has a hunger level of 1/10 and a thirst level of 2/10
+Customer: Mr. David Wells MD has a hunger level of 4/10 and a thirst level of 7/10
+
+    
+        Username : Aidan
+        Choice : Give a receipt to a customer.
+        Current Stress : 42
+        Current Money : 40
+        Current Customers :
+
+        -----------
+    Customer: Paul King has a hunger level of 5/10 and a thirst level of 6/10
+Customer: Susan Luna has a hunger level of 1/10 and a thirst level of 8/10
+Customer: Ashley Phillips has a hunger level of 1/10 and a thirst level of 2/10
+Customer: Mr. David Wells MD has a hunger level of 4/10 and a thirst level of 7/10
+
+    
+        Username : Aidan
+        Choice : Give a receipt to a customer.
+        Current Stress : 35
+        Current Money : 40
+        Current Customers :
+
+        -----------
+    Customer: Susan Luna has a hunger level of 1/10 and a thirst level of 8/10
+Customer: Ashley Phillips has a hunger level of 1/10 and a thirst level of 2/10
+Customer: Mr. David Wells MD has a hunger level of 4/10 and a thirst level of 7/10
+Customer: Matthew Mclaughlin has a hunger level of 2/10 and a thirst level of 2/10
+
+    
+        Username : Aidan
+        Choice : End the game.
+        Current Stress : 101
+        Current Money : 40
+        Current Customers :
+
+        -----------
+    Customer: Susan Luna has a hunger level of 1/10 and a thirst level of 8/10
+Customer: Ashley Phillips has a hunger level of 1/10 and a thirst level of 2/10
+Customer: Mr. David Wells MD has a hunger level of 4/10 and a thirst level of 7/10
+Customer: Matthew Mclaughlin has a hunger level of 2/10 and a thirst level of 2/10
+Customer: Becky Doyle has a hunger level of 6/10 and a thirst level of 10/10
+
+    
+        Username : Aidan
+        Time Ended : 2023-05-23 06:34:58.025637
+        Choice : Assess a cumstomer's order info.
+        Current Stress : 11
+        Current Money : 0
+        Current Customers :
+
+        -----------
+    	Customer: Janet Walters has a hunger level of 7/10 and a thirst level of 4/10
+
+    
+        Username : Aidan
+        Time Ended : 2023-05-23 06:35:09.069314
+        Choice : End the game.
+        Current Stress : 111
+        Current Money : 0
+        Current Customers :
+
+        -----------
+    	Customer: Janet Walters has a hunger level of 7/10 and a thirst level of 4/10
+
+    

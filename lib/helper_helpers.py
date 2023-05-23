@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+from datetime import datetime
+
+def print_stress(stress):
+    print(f'\n\t********** CURRENT STRESS LEVEL: {stress} **********\n')
+
 def choose_a_table(seated_customers):
     possible_choices = ['1', '2', '3', '4', '5']
     customer_choices = ''
@@ -15,7 +20,6 @@ def choose_a_table(seated_customers):
             customer = choices
     return customer
 
-
 def add_to_customer_database(customer):
     customer_info = f"""
         Name: {customer.name}
@@ -23,9 +27,8 @@ def add_to_customer_database(customer):
         Email Address: {customer.email}
         Phone Number: {customer.phone}\n
     """
-    with open('customers_served.txt', mode='a', encoding='utf-8') as database:
+    with open('./data/customers_served.txt', mode='a', encoding='utf-8') as database:
         database.write(customer_info)
-
 
 def take_down_data(user_name, total_money, stress, seated_customers, choice):
     if choice == 1:
@@ -38,9 +41,10 @@ def take_down_data(user_name, total_money, stress, seated_customers, choice):
         choice = 'End the game.'
     customer_info = ''
     for customer in seated_customers:
-        customer_info += f'{customer}\n'
+        customer_info += f'\t{customer}\n'
     text = f"""
         Username : {user_name}
+        Time Ended : {datetime.now()}
         Choice : {choice}
         Current Stress : {stress}
         Current Money : {total_money}
@@ -49,5 +53,5 @@ def take_down_data(user_name, total_money, stress, seated_customers, choice):
         -----------
     {customer_info}
     """
-    with open(f'{user_name}_gameplay.txt', mode='a', encoding='utf-8') as database:
+    with open(f'./data/{user_name}.txt', mode='a', encoding='utf-8') as database:
         database.write(text)
