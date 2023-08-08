@@ -36,7 +36,4 @@ if __name__ == '__main__':
             stress += 100
         take_down_data(user_name, total_money, stress, seated_customers, choice)
     game_over(user_name, total_money, stress, seated_customers)
-        
-
-    
-    
+            

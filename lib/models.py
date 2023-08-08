@@ -2,12 +2,23 @@ from sqlalchemy import ForeignKey, Column, Integer, String, MetaData
 from sqlalchemy.orm import relationship, backref
 from sqlalchemy.ext.declarative import declarative_base
 
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy import create_engine
+
+
+
+
 convention = {
     "fk": "fk_%(table_name)s_%(column_0_name)s_%(referred_table_name)s",
 }
 metadata = MetaData(naming_convention=convention)
 
 Base = declarative_base(metadata=metadata)
+
+engine = create_engine("sqlite:///diner.db")
+Session = sessionmaker(bind=engine)
+session = Session()
+
 
 class Meal(Base):
     __tablename__ = 'meals'
@@ -40,6 +51,13 @@ class Customer(Base):
             f'has a hunger level of {self.hunger_level}/10 ' + \
             f'and a thirst level of {self.thirst_level}/10'
     
+
+
+    
+    @classmethod
+    def alphabetical(cls):
+        alphabetical_data = session.query(Customer).order_by(Customer.name).all()
+        return alphabetical_data
     
 class Drink(Base):
     __tablename__ = 'drinks'
@@ -53,3 +71,6 @@ class Drink(Base):
 
     def __repr__(self):
         return f'{self.name} drink (price : {self.cost})'
+    
+
+

@@ -1,0 +1,72 @@
+
+        Username : James Aidan Zimmermann
+        Time Ended : 2023-05-24 17:07:05.657999
+        Choice : Assess a cumstomer's order info.
+        Current Stress : 14
+        Current Money : 0
+        Current Customers :
+
+        -----------
+    	Sandra Pena has a hunger level of 9/10 and a thirst level of 5/10
+
+    
+        Username : James Aidan Zimmermann
+        Time Ended : 2023-05-24 17:07:36.808743
+        Choice : Take an order from a customer.
+        Current Stress : 17
+        Current Money : 0
+        Current Customers :
+
+        -----------
+    	Sandra Pena has a hunger level of 0/10 and a thirst level of 5/10
+	Christian Logan has a hunger level of 6/10 and a thirst level of 6/10
+
+    
+        Username : James Aidan Zimmermann
+        Time Ended : 2023-05-24 17:07:51.300569
+        Choice : Give a receipt to a customer.
+        Current Stress : 21
+        Current Money : 15
+        Current Customers :
+
+        -----------
+    	Christian Logan has a hunger level of 6/10 and a thirst level of 6/10
+	Stephanie Ruiz has a hunger level of 8/10 and a thirst level of 1/10
+
+    
+        Username : James Aidan Zimmermann
+        Time Ended : 2023-05-24 17:08:13.214793
+        Choice : Give a receipt to a customer.
+        Current Stress : 9
+        Current Money : 15
+        Current Customers :
+
+        -----------
+    	Stephanie Ruiz has a hunger level of 8/10 and a thirst level of 1/10
+
+    
+        Username : James Aidan Zimmermann
+        Time Ended : 2023-05-24 17:08:45.065275
+        Choice : Assess a cumstomer's order info.
+        Current Stress : 22
+        Current Money : 15
+        Current Customers :
+
+        -----------
+    	Stephanie Ruiz has a hunger level of 8/10 and a thirst level of 1/10
+	Adam Green has a hunger level of 9/10 and a thirst level of 4/10
+
+    
+        Username : James Aidan Zimmermann
+        Time Ended : 2023-05-24 17:08:52.629798
+        Choice : End the game.
+        Current Stress : 130
+        Current Money : 15
+        Current Customers :
+
+        -----------
+    	Stephanie Ruiz has a hunger level of 8/10 and a thirst level of 1/10
+	Adam Green has a hunger level of 9/10 and a thirst level of 4/10
+	Kenneth Woodward has a hunger level of 4/10 and a thirst level of 4/10
+
+    
