@@ -39,7 +39,7 @@ If this is your first time playing:
 Now the game begins...
 *********************
 
-![gameplay](./images/Ready.png)
+![gameplay](./images/Diner-Dash.png)
 
 ## GamePlay
 
