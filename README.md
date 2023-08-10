@@ -25,6 +25,8 @@ Here are a couple things to note:
 - Another customer is already at the door.
 - If you get too stressed or the restruant gets too full, it's GAME OVER!
 
+![title](./images/Title.png)
+
 ### Starting up :memo:
 
 First, you will be asked in a prompt whether or not you have played the game before.
@@ -36,6 +38,8 @@ If this is your first time playing:
 
 Now the game begins...
 *********************
+
+![gameplay](./images/Ready.png)
 
 ## GamePlay
 
